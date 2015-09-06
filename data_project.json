@@ -1,0 +1,41 @@
+{
+  "users": [{
+    "id": "userid",
+    "name": "sample name",
+    "email": "sample@sample.com",
+    "createdAt": "2015-05-21T12:11:35",
+    "updatedAt": "2015-05-21T14:02:17",
+    "isAdmin": false
+  }],
+  "projectGroups": [{
+    "id": "98sdijzcsdio",
+    "name": "Project group one",
+    "projects": ["projectId1", "projectId2", "projectId3"]
+  }],
+  "projects": [{
+    "id": "123jslfei21",
+    "title": "sample",
+    "previewImage": "previewImage.jpg",
+    "splashImage": "imageId1",
+    "images": ["imageId1", "imageId2", "imageId3"],
+    "adminCreated": false,
+    "createdAt": "2015-05-21T12:11:35",
+    "updatedAt": "2015-05-21T14:02:17"
+  }],
+  "images": [{
+    "id": "238j98j",
+    "imageUrl": "https://image.s3.amazon.com",
+    "tags": ["tagId1", "tagId2"],
+    "createdAt": "2015-05-21T12:11:35",
+    "updatedAt": "2015-05-21T14:02:17"
+  }],
+  "imageGroups": [{
+    "id": "238qasdfj98j",
+    "name": "tag1",
+    "images": ["imageId1","imageId2","imageId3","imageId4"]
+  }],
+  "tags": [{
+    "id": "238j9asdflk8j",
+    "name": "tag1"
+  }]
+}

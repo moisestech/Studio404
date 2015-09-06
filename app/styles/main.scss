@@ -1,0 +1,52 @@
+@import "mixins/prefixer.scss";
+@import "mixins/flex.scss";
+@import "mixins/small-button.scss";
+
+@import "colors.scss";
+@import "constants.scss";
+@import "typography.scss";
+@import "components/nav-bar.scss";
+@import "components/side-nav.scss";
+@import "components/sub-nav.scss";
+@import "components/projects/index.scss";
+@import "components/projects/edit-steps/index.scss";
+@import "components/projects/edit-steps/footer.scss";
+@import "components/projects/cart.scss";
+@import "components/new-colors-button.scss";
+@import "components/up-down-switch.scss";
+@import "components/color-palette.scss";
+@import "components/modal.scss";
+@import "components/admin/main.scss";
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: #eeeeee;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+ul, ol {
+  list-style: none;
+}
+.main {
+  height: 93%;
+  @include display(flex);
+  @include flex(1 0 0);
+  @include flex-direction(column);
+
+  .category-wrapper:first-child {
+    margin-top: 60px;
+  }
+}
+#app {
+  height: 100%;
+  > div {
+    height: 100%;
+  }
+}

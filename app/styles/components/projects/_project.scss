@@ -1,0 +1,94 @@
+//
+// An individual complete project.
+//
+.project {
+  position: relative;
+  height: $project-large-size;
+  width: $project-large-size;
+  margin: 10px;
+  display: inline-block;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  &:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  span {
+    margin: 5px;
+  }
+  .top-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li:first-child {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .project-preview-image {
+    display: flex;
+    align-items: center;
+    flex: 1 0 0;
+    background: white;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .bottom-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+
+      &:first-child {
+        font-size: .8em;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 650px) {
+    height: $project-medium-size;
+    width: $project-medium-size;
+  }
+  @media (min-width: 900px) {
+    height: $project-large-size;
+    width: $project-large-size;
+  }
+}

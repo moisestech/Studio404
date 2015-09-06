@@ -1,0 +1,28 @@
+@import "./project.scss";
+@import "./show.scss";
+@import "./canvas.scss";
+@import "./edit.scss";
+@import "./edit-steps/index.scss";
+@import "./edit-detail.scss";
+//
+// Index page showing all designs in a grid.
+//
+.category-wrapper {
+	width: 100%;
+	height: auto;
+
+	h3.category-title {
+		font-size: 1.5em;
+		margin-left: 250px;
+	}
+	.projects {
+	  @include display(flex);
+	  @include flex-direction(row);
+	  @include justify-content(flex-start);
+	  @include flex-wrap(wrap);
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	  margin-left: 250px;
+	}
+}
