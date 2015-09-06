@@ -1,9 +1,7 @@
-![Alt text](/artdrop-screenshot.png?raw=true "Screenshot")
-
-Artdrop
+Studio404
 =======
 
-Artdrop React App
+Studio404 CMS React App
 
 # Setup
 
